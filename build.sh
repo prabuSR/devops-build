@@ -2,9 +2,9 @@
 set -e
 
 if [ "$BRANCH_NAME" = "dev" ]; then
-  IMAGE_NAME=<dockerhub-username>/dev:latest
+  IMAGE_NAME=prabusr/dev:latest
 elif [ "$BRANCH_NAME" = "main" ]; then
-  IMAGE_NAME=<dockerhub-username>/prod:latest
+  IMAGE_NAME=prabusr/prod:latest
 else
   echo "Unknown branch: $BRANCH_NAME"
   exit 1
