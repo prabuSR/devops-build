@@ -1,9 +1,8 @@
-version: '3.8'
-
 services:
   web:
     image: ${IMAGE_NAME}
-    container_name: devops-web
+    container_name: devops-web-${BRANCH_NAME}
     ports:
       - "80:80"
     restart: always
+
