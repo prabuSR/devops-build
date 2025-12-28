@@ -3,6 +3,5 @@ services:
     image: ${IMAGE_NAME}
     container_name: devops-web-${BRANCH_NAME}
     ports:
-      - "80:80"
+      - "${HOST_PORT}:80"
     restart: always
-
