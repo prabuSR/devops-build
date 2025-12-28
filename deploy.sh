@@ -3,7 +3,7 @@ set -e
 
 if [ "$BRANCH_NAME" = "dev" ]; then
   export IMAGE_NAME=prabusr/dev:latest
-  export HOST_PORT=8080
+  export HOST_PORT=8081
 elif [ "$BRANCH_NAME" = "main" ]; then
   export IMAGE_NAME=prabusr/prod:latest
   export HOST_PORT=80
